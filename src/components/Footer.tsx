@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-violet-600 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">HW</span>
               </div>
               <span className="font-bold text-xl">HealthWorks</span>
@@ -19,13 +19,13 @@ const Footer = () => {
               Your trusted partner for health and fitness products. Quality equipment and supplements for a healthier lifestyle.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-violet-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-violet-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-violet-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                 <Twitter size={20} />
               </a>
             </div>
@@ -90,15 +90,15 @@ const Footer = () => {
             <h3 className="font-semibold text-lg">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-violet-400" />
+                <Phone size={16} className="text-green-400" />
                 <span className="text-gray-400 text-sm">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-violet-400" />
+                <Mail size={16} className="text-green-400" />
                 <span className="text-gray-400 text-sm">info@healthworks.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin size={16} className="text-violet-400" />
+                <MapPin size={16} className="text-green-400" />
                 <span className="text-gray-400 text-sm">123 Fitness St, Health City</span>
               </div>
             </div>
