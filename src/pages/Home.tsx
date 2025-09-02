@@ -9,7 +9,7 @@ const Home = () => {
       name: "Premium Whey Protein",
       price: 49.99,
       originalPrice: 59.99,
-      image: "https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/whey-protein-1.jpg",
       category: "Supplements",
       rating: 4.8,
       reviews: 124
@@ -19,7 +19,7 @@ const Home = () => {
       name: "Adjustable Dumbbells Set",
       price: 299.99,
       originalPrice: 349.99,
-      image: "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/dumbbells-1.jpg",
       category: "Equipment",
       rating: 4.9,
       reviews: 87
@@ -29,7 +29,7 @@ const Home = () => {
       name: "Performance Tank Top",
       price: 24.99,
       originalPrice: 29.99,
-      image: "https://images.pexels.com/photos/8612918/pexels-photo-8612918.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/tank-top-1.jpg",
       category: "Apparel",
       rating: 4.7,
       reviews: 203
@@ -39,7 +39,7 @@ const Home = () => {
       name: "Resistance Bands Set",
       price: 19.99,
       originalPrice: 24.99,
-      image: "https://images.pexels.com/photos/4164542/pexels-photo-4164542.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/resistance-bands-1.jpg",
       category: "Accessories",
       rating: 4.6,
       reviews: 156
@@ -49,22 +49,22 @@ const Home = () => {
   const categories = [
     {
       name: "Supplements",
-      image: "https://images.pexels.com/photos/5938567/pexels-photo-5938567.jpeg?auto=compress&cs=tinysrgb&w=300",
+      image: "/assets/categories/supplements.jpg",
       count: "50+ Products"
     },
     {
       name: "Equipment",
-      image: "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=300",
+      image: "/assets/categories/equipment.jpg",
       count: "30+ Products"
     },
     {
       name: "Apparel",
-      image: "https://images.pexels.com/photos/8612918/pexels-photo-8612918.jpeg?auto=compress&cs=tinysrgb&w=300",
+      image: "/assets/categories/apparel.jpg",
       count: "40+ Products"
     },
     {
       name: "Accessories",
-      image: "https://images.pexels.com/photos/4164542/pexels-photo-4164542.jpeg?auto=compress&cs=tinysrgb&w=300",
+      image: "/assets/categories/accessories.jpg",
       count: "25+ Products"
     }
   ];
@@ -72,25 +72,25 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="relative bg-gradient-to-r from-violet-600 to-violet-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Transform Your
-              <span className="block text-blue-200">Fitness Journey</span>
+              <span className="block text-violet-200">Fitness Journey</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-violet-100 max-w-3xl mx-auto">
               Discover premium supplements, equipment, and apparel to help you achieve your health and fitness goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/products"
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center"
+                className="bg-white text-violet-600 px-8 py-3 rounded-lg font-semibold hover:bg-violet-50 transition-colors inline-flex items-center justify-center"
               >
                 Shop Now
                 <ArrowRight size={20} className="ml-2" />
               </Link>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-violet-600 transition-colors">
                 Learn More
               </button>
             </div>
@@ -103,29 +103,29 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <ShieldCheck className="text-blue-600" size={24} />
+              <div className="bg-violet-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ShieldCheck className="text-violet-600" size={24} />
               </div>
               <h3 className="font-semibold text-lg mb-2">Quality Guaranteed</h3>
               <p className="text-gray-600 text-sm">Premium products tested for quality and effectiveness</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Truck className="text-blue-600" size={24} />
+              <div className="bg-violet-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Truck className="text-violet-600" size={24} />
               </div>
               <h3 className="font-semibold text-lg mb-2">Free Shipping</h3>
               <p className="text-gray-600 text-sm">Free delivery on orders over $50</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <HeadphonesIcon className="text-blue-600" size={24} />
+              <div className="bg-violet-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <HeadphonesIcon className="text-violet-600" size={24} />
               </div>
               <h3 className="font-semibold text-lg mb-2">24/7 Support</h3>
               <p className="text-gray-600 text-sm">Expert customer service whenever you need it</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="text-blue-600" size={24} />
+              <div className="bg-violet-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="text-violet-600" size={24} />
               </div>
               <h3 className="font-semibold text-lg mb-2">Top Rated</h3>
               <p className="text-gray-600 text-sm">Thousands of satisfied customers worldwide</p>
@@ -157,7 +157,7 @@ const Home = () => {
                   <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-opacity" />
                   <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
                     <h3 className="text-xl font-bold mb-1">{category.name}</h3>
-                    <p className="text-blue-200">{category.count}</p>
+                    <p className="text-violet-200">{category.count}</p>
                   </div>
                 </div>
               </Link>
@@ -185,7 +185,7 @@ const Home = () => {
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded">
+                    <span className="text-xs font-medium text-violet-600 bg-violet-100 px-2 py-1 rounded">
                       {product.category}
                     </span>
                     <div className="flex items-center text-yellow-400">
@@ -199,7 +199,7 @@ const Home = () => {
                       <span className="text-lg font-bold text-gray-900">${product.price}</span>
                       <span className="text-sm text-gray-500 line-through">${product.originalPrice}</span>
                     </div>
-                    <button className="bg-blue-600 text-white px-3 py-1.5 rounded text-sm font-medium hover:bg-blue-700 transition-colors">
+                    <button className="bg-violet-600 text-white px-3 py-1.5 rounded text-sm font-medium hover:bg-violet-700 transition-colors">
                       Add to Cart
                     </button>
                   </div>
@@ -210,7 +210,7 @@ const Home = () => {
           <div className="text-center mt-8">
             <Link
               to="/products"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
+              className="bg-violet-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-violet-700 transition-colors inline-flex items-center"
             >
               View All Products
               <ArrowRight size={20} className="ml-2" />
@@ -220,19 +220,19 @@ const Home = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="py-16 bg-blue-600">
+      <section className="py-16 bg-violet-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Stay in the Loop</h2>
-          <p className="text-blue-100 text-lg mb-8">
+          <p className="text-violet-100 text-lg mb-8">
             Get the latest updates on new products, exclusive offers, and fitness tips
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="flex-1 px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-violet-400"
             />
-            <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            <button className="bg-white text-violet-600 px-6 py-3 rounded-lg font-semibold hover:bg-violet-50 transition-colors">
               Subscribe
             </button>
           </div>

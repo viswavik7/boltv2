@@ -14,9 +14,9 @@ const ProductDetail = () => {
     price: 49.99,
     originalPrice: 59.99,
     images: [
-      "https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/5938567/pexels-photo-5938567.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/4164542/pexels-photo-4164542.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "/assets/products/whey-protein-1.jpg",
+      "/assets/products/whey-protein-2.jpg",
+      "/assets/products/whey-protein-3.jpg"
     ],
     category: "Supplements",
     rating: 4.8,
@@ -59,7 +59,7 @@ const ProductDetail = () => {
                     key={index}
                     onClick={() => setSelectedImage(index)}
                     className={`w-20 h-20 rounded-lg overflow-hidden border-2 ${
-                      selectedImage === index ? 'border-blue-500' : 'border-gray-200'
+                      selectedImage === index ? 'border-violet-500' : 'border-gray-200'
                     }`}
                   >
                     <img
@@ -75,7 +75,7 @@ const ProductDetail = () => {
             {/* Product Info */}
             <div>
               <div className="mb-4">
-                <span className="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="inline-block bg-violet-100 text-violet-600 px-3 py-1 rounded-full text-sm font-medium">
                   {product.category}
                 </span>
               </div>
@@ -121,7 +121,7 @@ const ProductDetail = () => {
                     id="quantity"
                     value={quantity}
                     onChange={(e) => setQuantity(Number(e.target.value))}
-                    className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-violet-500"
                   >
                     {[...Array(10)].map((_, i) => (
                       <option key={i + 1} value={i + 1}>
@@ -133,7 +133,7 @@ const ProductDetail = () => {
               </div>
 
               <div className="flex space-x-4 mb-8">
-                <button className="flex-1 bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
+                <button className="flex-1 bg-violet-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-violet-700 transition-colors flex items-center justify-center">
                   <ShoppingCart size={20} className="mr-2" />
                   Add to Cart
                 </button>
@@ -148,7 +148,7 @@ const ProductDetail = () => {
                 <ul className="space-y-2">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-violet-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -161,8 +161,8 @@ const ProductDetail = () => {
           <div className="border-t bg-gray-50 px-8 py-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                  <Truck className="text-blue-600" size={20} />
+                <div className="bg-violet-100 p-3 rounded-lg mr-4">
+                  <Truck className="text-violet-600" size={20} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Free Shipping</h4>
@@ -170,8 +170,8 @@ const ProductDetail = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                  <RotateCcw className="text-blue-600" size={20} />
+                <div className="bg-violet-100 p-3 rounded-lg mr-4">
+                  <RotateCcw className="text-violet-600" size={20} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">30-Day Returns</h4>
@@ -179,8 +179,8 @@ const ProductDetail = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                  <Shield className="text-blue-600" size={20} />
+                <div className="bg-violet-100 p-3 rounded-lg mr-4">
+                  <Shield className="text-violet-600" size={20} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Quality Guarantee</h4>

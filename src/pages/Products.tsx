@@ -12,7 +12,7 @@ const Products = () => {
       name: "Premium Whey Protein",
       price: 49.99,
       originalPrice: 59.99,
-      image: "https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/whey-protein-1.jpg",
       category: "Supplements",
       rating: 4.8,
       reviews: 124,
@@ -23,7 +23,7 @@ const Products = () => {
       name: "Adjustable Dumbbells Set",
       price: 299.99,
       originalPrice: 349.99,
-      image: "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/dumbbells-1.jpg",
       category: "Equipment",
       rating: 4.9,
       reviews: 87,
@@ -34,7 +34,7 @@ const Products = () => {
       name: "Performance Tank Top",
       price: 24.99,
       originalPrice: 29.99,
-      image: "https://images.pexels.com/photos/8612918/pexels-photo-8612918.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/tank-top-1.jpg",
       category: "Apparel",
       rating: 4.7,
       reviews: 203,
@@ -45,7 +45,7 @@ const Products = () => {
       name: "Resistance Bands Set",
       price: 19.99,
       originalPrice: 24.99,
-      image: "https://images.pexels.com/photos/4164542/pexels-photo-4164542.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/resistance-bands-1.jpg",
       category: "Accessories",
       rating: 4.6,
       reviews: 156,
@@ -56,7 +56,7 @@ const Products = () => {
       name: "Creatine Monohydrate",
       price: 29.99,
       originalPrice: 34.99,
-      image: "https://images.pexels.com/photos/5938567/pexels-photo-5938567.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/creatine-1.jpg",
       category: "Supplements",
       rating: 4.5,
       reviews: 98,
@@ -67,7 +67,7 @@ const Products = () => {
       name: "Yoga Mat Premium",
       price: 39.99,
       originalPrice: 49.99,
-      image: "https://images.pexels.com/photos/3820288/pexels-photo-3820288.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/assets/products/yoga-mat-1.jpg",
       category: "Equipment",
       rating: 4.8,
       reviews: 176,
@@ -79,7 +79,7 @@ const Products = () => {
       name: "YOUR PRODUCT NAME HERE",
       price: 0.00,
       originalPrice: 0.00,
-      image: "https://via.placeholder.com/400x400/e5e7eb/6b7280?text=Your+Product",
+      image: "/assets/products/placeholder-1.jpg",
       category: "Supplements",
       rating: 0,
       reviews: 0,
@@ -90,7 +90,7 @@ const Products = () => {
       name: "YOUR PRODUCT NAME HERE",
       price: 0.00,
       originalPrice: 0.00,
-      image: "https://via.placeholder.com/400x400/e5e7eb/6b7280?text=Your+Product",
+      image: "/assets/products/placeholder-2.jpg",
       category: "Equipment",
       rating: 0,
       reviews: 0,
@@ -129,7 +129,7 @@ const Products = () => {
                   placeholder="Search products..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent"
                 />
               </div>
             </div>
@@ -143,7 +143,7 @@ const Products = () => {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-violet-500"
               >
                 {categories.map(category => (
                   <option key={category} value={category}>{category}</option>
@@ -157,7 +157,7 @@ const Products = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-violet-500"
               >
                 <option value="featured">Featured</option>
                 <option value="price-low">Price: Low to High</option>
@@ -194,7 +194,7 @@ const Products = () => {
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded">
+                  <span className="text-xs font-medium text-violet-600 bg-violet-100 px-2 py-1 rounded">
                     {product.category}
                   </span>
                   {product.rating > 0 && (
@@ -223,7 +223,7 @@ const Products = () => {
                   disabled={!product.inStock || product.price === 0}
                   className={`w-full py-2 px-4 rounded-lg font-medium transition-colors ${
                     product.inStock && product.price > 0
-                      ? 'bg-blue-600 text-white hover:bg-blue-700'
+                      ? 'bg-violet-600 text-white hover:bg-violet-700'
                       : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
                 >
